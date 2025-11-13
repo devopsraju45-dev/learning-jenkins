@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Hai') {
             steps {
-                echo 'Hello World'
+                echo 'Hello World1'
                 echo "${SAMPLE_URL}"
             }
         }
