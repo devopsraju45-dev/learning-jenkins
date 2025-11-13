@@ -19,6 +19,7 @@ pipeline {
                 echo 'Hello World1'
                 echo "${SAMPLE_URL}"
                 echo "${SSH}"
+                echo "PERSON = ${PERSON}"
             }
         }
     }
