@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        node { label 'workstation'}
-    }
+
     environment {
     SAMPLE_URL = "google.com"
     SSH = credentials("SSH")
@@ -21,6 +19,7 @@ pipeline {
                 echo "${SAMPLE_URL}"
                 echo "${SSH}"
                 echo "PERSON = ${PERSON}"
+                sh 'nvm --version'
             }
         }
     }
